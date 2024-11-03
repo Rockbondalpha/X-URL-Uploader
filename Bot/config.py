@@ -19,19 +19,19 @@ class Config(object):
 
     DUMP_ID = int(os.environ.get("DUMP_ID", 0))
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "dec9a696be8540cbc88b2b8d76c1ae91")
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", 27430969))
+    API_HASH = os.environ.get("dec9a696be8540cbc88b2b8d76c1ae91")
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
         "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
 
-    OWNER_ID = int(os.environ.get('OWNER_ID'))
+    OWNER_ID = int(os.environ.get('1224373975'))
 
     # MongoDB
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    DATABASE_URL = os.environ.get("mongodb+srv://as7714935:cBIW24xhytU4ZfhU@cluster0.vfjfb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
@@ -41,7 +41,7 @@ class Config(object):
 
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
-    HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
+    HTTP_PROXY = os.environ.get("HTTP_PROXY", "http_proxy="182.74.243.47:3128" youtube-dl -F")
 
     # watermark file
     DEF_WATER_MARK_FILE = ""
